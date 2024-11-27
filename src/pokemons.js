@@ -40,7 +40,8 @@ const pokemons1 = [{
 
 const fs = require('node:fs');
 // this file has been formatted as JSON that can be read by the node fs file system reader
-fs.readFile("/Users/theresajvrensburg/projects/games/javascript-greatest-pokemons/src/data.js", (err, data) => {
+const fp = "/"; // add the file path to your project here!!!!!!
+fs.readFile(fp + "javascript-greatest-pokemons/src/data.js", (err, data) => {
     if (err) {
         console.error(err);
         return;
